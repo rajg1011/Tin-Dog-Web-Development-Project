@@ -1,0 +1,217 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Montserrat-Black", sans-serif;
+}
+/* Variable */
+:root {
+  --red: rgb(251, 80, 80);
+  --white: white;
+}
+
+/* Some common class */
+.background-color {
+  background-color: var(--red);
+}
+
+.white {
+  color: var(--white);
+}
+
+.common-heading {
+  size: 4rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+/* NavBar */
+
+.container-fluid {
+  padding: 0% 15% 1% 15%;
+}
+
+.main-heading {
+  margin-top: 10%;
+}
+
+.tinDog {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.list li a {
+  font-size: 1.1rem;
+}
+
+.dwnld-btn {
+  margin: 20px 20px 0px 0px;
+  padding: 10px;
+}
+
+.dog-image {
+  transform: rotate(20deg);
+  margin-top: 2%;
+  width: 100%;
+}
+
+/* Features */
+
+#features {
+  background-color: white;
+  padding: 12%;
+  position: relative;
+  z-index: 1;
+  margin-top: -25%;
+}
+
+.features-div {
+  margin: 0% 5% 0% 5%;
+  text-align: center;
+}
+
+.features-div i {
+  color: var(--red);
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.features-div h3 {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.features-div p {
+  font-family: "Montserrat-thin";
+  font-size: 1.1rem;
+}
+
+/* tetimonials */
+
+#review {
+  text-align: center;
+}
+
+.review-div img {
+  border-radius: 50%;
+  width: 10%;
+  margin: 0% 2% 2% 0%;
+}
+
+.review-div h2 {
+  margin: 4%;
+}
+
+/* Press */
+
+#press {
+  text-align: center;
+}
+
+.partner img {
+  margin: 2%;
+}
+
+/* plans */
+#plans {
+  text-align: center;
+  margin: 7% 0% 7% 0%;
+}
+.plan-headings {
+  margin-bottom: 5%;
+}
+
+.p-image {
+  width: 30%;
+}
+
+/* Download */
+
+#download {
+  text-align: center;
+}
+
+.main-heading-dwnld {
+  padding-top: 5%;
+}
+
+.btn-dwnld {
+  padding-bottom: 8%; /* Why margin not working */
+  margin-top: 3%;
+}
+
+/* footer */
+.footer {
+  margin-top: 1%;
+  text-align: center;
+  color: grey;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 1052px) {
+  .dog-image {
+    transform: rotate(10deg);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .title-media {
+    text-align: center;
+  }
+
+  .dog-image {
+    margin-top: 10%;
+    width: 70%;
+  }
+  .heading-media {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .dog-image {
+    transform: rotate(0deg);
+  }
+
+  .card-media {
+    margin-top: 5%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .features-media {
+    flex-direction: column;
+  }
+
+  .features-div {
+    padding-top: 4%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .dwnld-btn {
+    font-size: 14px;
+  }
+  .heading-media-2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 355px) {
+  .media-fluid {
+    --bs-gutter-x: 1.3rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+  }
+}
+
+@media screen and (max-width: 575px) and (min-width: 550px) {
+  .dd {
+    flex-direction: row;
+  }
+}

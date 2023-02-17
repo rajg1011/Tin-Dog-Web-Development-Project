@@ -1,0 +1,1 @@
+Cards of "section=plans" are not responsive from 575px to 550px. Where to make changes in bootstrap or custom CSS to make it work?
